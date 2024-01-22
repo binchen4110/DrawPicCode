@@ -18,12 +18,6 @@ fig, axes = plt.subplots(nrows=2, ncols=4, figsize=(16, 8), dpi=600)
 H = ['Hits@10', 'Hits@50', 'Hits@100']
 M = ['MAP@10', 'MAP@50', 'MAP@100']
 
-# 假设你有三个采样方式的数据，每个采样方式有4组数据
-data1 = np.random.rand(3)
-data2 = np.random.rand(3)
-data3 = np.random.rand(3)
-data4 = np.random.rand(3)
-
 # 设置横坐标
 x_positions = np.arange(3)
 
@@ -34,14 +28,14 @@ marker_method3 = 's'
 marker_method4 = 'D'
 
 # 设置每个子图的纵坐标范围
-
-axes[0, 1].set_ylim(20, 65)  # 调整范围
-axes[0, 2].set_ylim(5, 32)  # 调整范围
-axes[0, 3].set_ylim(20, 65)  # 调整范围
-axes[1, 0].set_ylim(20, 30)  # 调整范围
-axes[1, 1].set_ylim(15, 20)  # 调整范围
-axes[1, 2].set_ylim(5, 10)   # 调整范围
-axes[1, 3].set_ylim(15, 25)  # 调整范围
+axes[0, 0].set_ylim(35, 65)  # 调整范围
+axes[0, 1].set_ylim(30, 68)  # 调整范围
+axes[0, 2].set_ylim(5, 33)  # 调整范围
+axes[0, 3].set_ylim(20, 67)  # 调整范围
+axes[1, 0].set_ylim(24.5, 26.7)  # 调整范围
+axes[1, 1].set_ylim(16, 18)  # 调整范围
+axes[1, 2].set_ylim(6.5, 7.5)   # 调整范围
+axes[1, 3].set_ylim(19, 21)  # 调整范围
 
 
 # 00子图
@@ -185,12 +179,10 @@ for ax in axes.flatten():
     # 设置子图标题加粗
     ax.set_title(ax.get_title(), fontweight='bold')
 
-    ax.set_ylim(0, 1.1 * ax.get_ylim()[1])
-
 # 调整布局
 plt.tight_layout()
 
 # 保存图形到文件
-plt.savefig('your_plot.pdf', dpi=600, bbox_inches='tight')
+plt.savefig('multi_chart.pdf', dpi=600, bbox_inches='tight')
 # 显示图形
 plt.show()
