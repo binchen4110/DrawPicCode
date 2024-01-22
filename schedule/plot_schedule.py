@@ -27,7 +27,7 @@ y_data = [
 
 # 绘制柱状图
 for k, method in enumerate(schedule):
-    ax.bar(x_positions + k * 0.2, y_data[k], width=0.2, label=method, color=colors[k])
+    ax.bar(x_positions + k * 0.2, y_data[k], width=0.2,label=method, color=colors[k])
 
 # 设置图形属性
 ax.set_xticks(x_positions + 0.3)
@@ -58,7 +58,7 @@ plt.setp(legend.get_texts(), fontweight='bold')
 plt.ylim(35, 64)
 
 # 保存图形到文件
-file_name = f'{data_name}_{HorM}.pdf'
+file_name = f'../pics/{data_name}_{HorM}.pdf'
 plt.savefig(file_name, dpi=600, bbox_inches='tight')
 
 # 显示图形（可选）

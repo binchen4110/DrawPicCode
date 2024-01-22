@@ -29,9 +29,9 @@ r3 = [x + barWidth for x in r2]
 plt.figure(figsize=[10, 8])
 
 error_kw=dict(ecolor='black', capsize=2)
-plt.bar(r1, line1, width=barWidth, color=mark_color32, edgecolor='grey', label='size = 32', yerr=error_line1, **error_kw)
-plt.bar(r2, line2, width=barWidth, color=mark_color64, edgecolor='grey', label='size = 64', yerr=error_line2, **error_kw)
-plt.bar(r3, line3, width=barWidth, color=mark_color128, edgecolor='grey', label='size = 128', yerr=error_line3, **error_kw)
+plt.bar(r1, line1, width=barWidth, color=mark_color32, edgecolor='white', label='size = 32', yerr=error_line1, **error_kw)
+plt.bar(r2, line2, width=barWidth, color=mark_color64, edgecolor='white', label='size = 64', yerr=error_line2, **error_kw)
+plt.bar(r3, line3, width=barWidth, color=mark_color128, edgecolor='white', label='size = 128', yerr=error_line3, **error_kw)
 
 # 加粗边框
 ax = plt.gca()
@@ -63,6 +63,6 @@ for label in ax.get_yticklabels():
 legend = ax.legend()
 plt.setp(legend.get_texts(), fontweight='bold')
 
-plt.savefig('bar_chart.pdf', dpi=1000, bbox_inches='tight')
+plt.savefig('../pics/bar_chart.pdf', dpi=1000, bbox_inches='tight')
 # 显示图形
 plt.show()
