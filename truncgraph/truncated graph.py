@@ -61,5 +61,5 @@ ax2.set_title('Line 2 with Variance Shading')
 ax2.set_xlabel('X-axis Label')
 
 # 显示图形
-plt.savefig('broken_yaxis_updated.png', dpi=600, bbox_inches='tight')
+plt.savefig('../pics/trunc.pdf', dpi=1000, bbox_inches='tight')
 plt.show()
