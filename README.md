@@ -8,7 +8,7 @@ Under each folder, there is a **draw.py** file, which is used to draw pictures c
 
 #### **1.** 3D Plot
 
-![image-20240131161728940](C:\Users\peggy\AppData\Roaming\Typora\typora-user-images\image-20240131161728940.png)
+![QQ截图20240131162355](C:\Users\peggy\Desktop\QQ截图20240131162355.png)
 
 #### 2. Bar Line Chart
 
