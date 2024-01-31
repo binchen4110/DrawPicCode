@@ -28,22 +28,31 @@ fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 
 # 绘制三维平面图，设置颜色映射为 'Blues'
-surface = ax.plot_surface(alpha, beta, hits, cmap='Blues', edgecolor='k', linewidth=0.5)
+surface = ax.plot_surface(beta, alpha, hits, cmap='Blues', edgecolor='white', linewidth=0.2)
 
-# 添加颜色条，并设置相对长度为0.8（可以根据需要调整）
+# 添加颜色条，并设置相对长度为0.8，同时调整刻度位置和 pad 参数
 colorbar = fig.colorbar(surface, label='Hits@100', shrink=0.6)
-colorbar.ax.set_ylabel('Hits@100', fontsize=14)
+colorbar.ax.set_ylabel('Hits@100', fontsize=18)
+
+# 调整整个图的角度，设置仰角为30度，方位角为45度（可以根据需要调整）
+ax.view_init(elev=30, azim=45)
 
 # 设置图形标题和轴标签
 # ax.set_title('Alpha, Beta vs Hits')
-ax.set_xlabel('hyperparameter $\\alpha$', fontsize=14)
-ax.set_ylabel('hyperparameter $\\beta$', fontsize=14)
+ax.set_xlabel('Loss wight $\\alpha$', fontsize=20, labelpad=10)
+ax.set_ylabel('Loss wight $\\beta$', fontsize=20, labelpad=10)
 # ax.set_zlabel('Hits@100')
 
 # 设置坐标轴刻度间隔为0.1
-ax.set_xticks(np.arange(0.1, 0.5, 0.1))
-ax.set_yticks(np.arange(0.1, 0.5, 0.1))
-ax.set_zticks(np.arange(27.0, 30.5, 0.5))
+ax.set_xticks(np.arange(0.1, 0.6, 0.1))
+ax.set_yticks(np.arange(0.1, 0.6, 0.1))
+ax.set_zticks(np.arange(27.8, 29.2, 0.2))
+
+# 设置坐标轴字体大小
+ax.tick_params(axis='x', labelsize=15)  # x轴刻度字体大小
+ax.tick_params(axis='y', labelsize=15)  # y轴刻度字体大小
+ax.tick_params(axis='z', labelsize=15)  # x轴刻度字体大小
 
 plt.tight_layout()
+plt.savefig("../pics/3d_hits100.pdf", dpi=1000, bbox_inches='tight')
 plt.show()
