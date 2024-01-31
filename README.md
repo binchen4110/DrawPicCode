@@ -14,6 +14,8 @@ Under each folder, there is a **draw.py** file, which is used to draw pictures c
 #### 2. Bar Line Chart
 
 **Code from zjn**
+<a><img src="./asset/bar line chart.png" height="240"/></a>
+
 
 #### 3.Multi Chart
 
