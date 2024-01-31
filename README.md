@@ -8,17 +8,15 @@ Under each folder, there is a **draw.py** file, which is used to draw pictures c
 
 #### **1.** 3D Plot
 
-![QQ截图20240131162355](C:\Users\peggy\Desktop\QQ截图20240131162355.png)
+![3d plot](.\asset\3d plot.png)
 
 #### 2. Bar Line Chart
 
 **Code from zjn**
 
-#### ![image-20240131161824071](C:\Users\peggy\AppData\Roaming\Typora\typora-user-images\image-20240131161824071.png)3.Multi Chart
+#### ![image-20240131161824071](.\asset\bar line chart.png)3.Multi Chart
 
-![image-20240131161914470](C:\Users\peggy\AppData\Roaming\Typora\typora-user-images\image-20240131161914470.png)
-
-
+![multi bar chart](.\asset\multi bar chart.png)
 
 #### 4. t-SNE
 
@@ -28,9 +26,12 @@ adding......
 
 #### 5. Truncgraph
 
-![image-20240131162130149](C:\Users\peggy\AppData\Roaming\Typora\typora-user-images\image-20240131162130149.png)
+![image-20240131162130149](.\asset\trunc graph 1.png)
 
 **Code from yk**
 
-![image-20240131162159471](C:\Users\peggy\AppData\Roaming\Typora\typora-user-images\image-20240131162159471.png)
+![trunc graph 2](.\asset\trunc graph 2.png)
 
+
+
+## **More pics and code are waiting to be uploaded!**
