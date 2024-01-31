@@ -183,6 +183,6 @@ for ax in axes.flatten():
 plt.tight_layout()
 
 # 保存图形到文件
-plt.savefig('multi_chart.pdf', dpi=600, bbox_inches='tight')
+plt.savefig('../pics/multi_chart.pdf', dpi=600, bbox_inches='tight')
 # 显示图形
 plt.show()

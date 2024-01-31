@@ -23,8 +23,8 @@ ax1.fill_between(x_values, y_values1 - variance1, y_values1 + variance1, alpha=0
 ax2.fill_between(x_values, y_values2 - variance2, y_values2 + variance2, alpha=0.2, color='orange')
 
 # 调整两个y轴的显示范围
-ax1.set_ylim(30, 40)  # 适当调整范围
-ax2.set_ylim(10, 15)  # 适当调整范围
+ax1.set_ylim(25, 42)  # 适当调整范围
+ax2.set_ylim(8, 18)  # 适当调整范围
 
 # 隐藏两个坐标轴系列之间的横线
 ax1.spines.bottom.set_visible(False)

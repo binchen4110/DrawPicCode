@@ -4,10 +4,17 @@ import numpy as np
 
 
 # 计算beta方式
-def linear_beta_schedule(timesteps, beta_start, beta_end):
-    beta_start = beta_start
-    beta_end = beta_end
-    return torch.linspace(beta_start, beta_end, timesteps)
+# def linear2_beta_schedule(timesteps, beta_start, beta_end):
+#     beta_start = beta_start
+#     beta_end = beta_end
+#     return torch.linspace(beta_start, beta_end, timesteps)
+
+# 计算beta方式
+def linear1_beta_schedule(timesteps, beta_start, beta_end):
+    scale = 1000 / timesteps
+    beta_start = scale *beta_start
+    beta_end = scale * beta_end
+    return np.linspace(beta_start, beta_end, timesteps, dtype=np.float64)
 
 def cosine_beta_schedule(timesteps, s=0.008):
     steps = timesteps + 1
@@ -54,13 +61,13 @@ plt.rcParams['font.size'] = 22
 # Beta schedule设定
 beta_schedules = ['Linear', 'Exp', 'Cosine', 'Sqrt']
 
-plt.figure(figsize=(8, 4.5))
+plt.figure(figsize=(8, 6))
 
 # 对每种beta schedule进行计算并绘图
 for beta_sche in beta_schedules:
 
     if beta_sche == 'Linear':
-        betas = linear_beta_schedule(timesteps=steps, beta_start=beta_start, beta_end=beta_end)
+        betas = linear1_beta_schedule(timesteps=steps, beta_start=beta_start, beta_end=beta_end)
     elif beta_sche == 'Exp':
         betas = exp_beta_schedule(timesteps=steps)
     elif beta_sche == 'Cosine':
@@ -79,13 +86,13 @@ for beta_sche in beta_schedules:
 
 # 添加标签
 # 添加标签并进行加粗
-# plt.xlabel('Diffusion Step (t/T)', fontweight='bold')
-plt.ylabel(r'$\bar{\alpha}_{t}$', fontweight='bold')
+# plt.xlabel('Diffusion Step (t/T)')
+plt.ylabel(r'$\bar{\alpha}_{t}$')
 
 plt.grid(color='lightgray', linestyle='--')
 
 plt.subplots_adjust(top=0.98, right=0.98)
-
+plt.ylim(0.0, 1.0)
 # 放大图例
 plt.legend(fontsize='small')
 plt.savefig('../pics/beta_sche.pdf', dpi=1000, bbox_inches='tight')
