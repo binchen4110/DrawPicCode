@@ -8,7 +8,7 @@ Under each folder, there is a **draw.py** file, which is used to draw pictures c
 
 #### **1.** 3D Plot
 
-![3d plot](.\asset\3d plot.png)
+./asset/3d plot.png
 
 #### 2. Bar Line Chart
 
