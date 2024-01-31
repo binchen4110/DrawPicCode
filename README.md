@@ -15,9 +15,10 @@ Under each folder, there is a **draw.py** file, which is used to draw pictures c
 
 **Code from zjn**
 
-#### ![image-20240131161824071](.\asset\bar line chart.png)3.Multi Chart
+#### 3.Multi Chart
 
-![multi bar chart](.\asset\multi bar chart.png)
+<a><img src="./asset/multi bar chart.png" height="240"/></a>
+
 
 #### 4. t-SNE
 
@@ -26,13 +27,11 @@ adding......
 
 
 #### 5. Truncgraph
-
-![image-20240131162130149](.\asset\trunc graph 1.png)
+<a><img src="./asset/trunc graph 1.png" height="240"/></a>
 
 **Code from yk**
 
-![trunc graph 2](.\asset\trunc graph 2.png)
-
+<a><img src="./asset/trunc graph 2.png" height="240"/></a>
 
 
 ## **More pics and code are waiting to be uploaded!**
