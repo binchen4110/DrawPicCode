@@ -7,8 +7,9 @@ Under each folder, there is a **draw.py** file, which is used to draw pictures c
 ### *Here are some example:*
 
 #### **1.** 3D Plot
+<a><img src="./asset/3d plot.png" height="240"/></a>
 
-./asset/3d plot.png
+
 
 #### 2. Bar Line Chart
 
